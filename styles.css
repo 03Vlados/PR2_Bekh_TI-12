@@ -5,55 +5,69 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', Arial, sans-serif; /* Додано сучасніший шрифт */
+    background-color: #e9ecef; /* Змінено фон на світліший сірий */
 }
 
 .container {
     width: 100%;
     max-width: 500px;
     margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 25px; /* Трохи більше простору */
+    border-radius: 12px; /* Збільшено радіус кутів */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Збільшено інтенсивність тіні */
+    border: 1px solid #dee2e6; /* Додано легку рамку */
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 24px; /* Трохи більший розмір */
+    color: #343a40; /* Темніший колір для заголовка */
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Додано рівний проміжок між елементами */
 }
 
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    color: #495057; /* Темніший текст */
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px; /* Більший внутрішній відступ */
+    border: 1px solid #ced4da;
+    border-radius: 6px; /* Більший радіус для більш м'якого вигляду */
     font-size: 16px;
+    background-color: #f8f9fa; /* Легкий фон для інпутів */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Анімація для фокусу */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
 }
 
 button {
-    padding: 10px;
-    background-color: #28a745;
+    padding: 12px;
+    background-color: #007bff; /* Змінено на синій колір */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Додано плавну анімацію */
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3; /* Темніший відтінок синього при наведенні */
+    transform: scale(1.05); /* Легка зміна розміру */
 }
 
 @media (max-width: 600px) {
